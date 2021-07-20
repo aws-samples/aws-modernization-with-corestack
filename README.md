@@ -1,4 +1,4 @@
-# AWSWorkshop.io Workshop - Puppet
+# AWSWorkshop.io Workshop - CoreStack
 
 This is the repository to generate the AWS/Puppet Workshop from and execute with Hugo.
 
