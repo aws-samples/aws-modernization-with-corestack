@@ -36,6 +36,4 @@ msbuild.wrn
 node_modules/
 
 # git related
-.git
-.git/
 .github/
