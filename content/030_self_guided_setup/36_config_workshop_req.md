@@ -1,53 +1,43 @@
 ---
-title: "5. Configure workshop specific requirements"
+title: "5. Additional workshop specific requirements"
 chapter: true
 weight: 18
 ---
 
-## Configure Workspace
+## Additional workshop specific requirements
 
-1. Return to your workspace and click the gear icon (in top right corner), or click to open a new tab and choose "Open Preferences"
+{{% notice tip %}}
+**Template Actions​**
+{{% /notice %}}
 
-2. Select **AWS SETTINGS** and turn off **AWS managed temporary credentials**
+Template actions will be shown to every template listed when you are hovering mouse on a template. The list of actions depends on the scope of the template (Marketplace, My Templates) and the RBAC access for templates that user has.​
 
-3. Close the Preferences tab
-   
-    ![Turn off temp credentials](/images/setup/iamRoleWorkspace.gif)
+**Execute** – Executes the template immediately and redirects to “Job history” where you can see the status and output of the execution.  ​
 
-4. Copy and run (paste with **Ctrl+P** or **CMD+P**) the commands below.
+**Edit**– Modifies the properties, content, metadata of the Template. It's like Template Create workflow.  ​
 
-      Before running it, review what it does by reading through the comments.
+**Schedules** – Similar to Execute, but schedules it to be run later once/multiple times. ​
 
-      ```sh
-      # Update awscli
-      sudo pip install --upgrade awscli && hash -r
-      
-      # Install jq command-line tool for parsing JSON, and bash-completion
-      sudo yum -y install jq gettext bash-completion moreutils
-      
-      # Install yq for yaml processing
-      echo 'yq() {
-      docker run --rm -i -v "${PWD}":/workdir mikefarah/yq yq "$@"
-      }' | tee -a ~/.bashrc && source ~/.bashrc
-      
-      # Verify the binaries are in the path and executable
-      for command in jq aws
-      do
-        which $command &>/dev/null && echo "$command in path" || echo "$command NOT FOUND"
-      done
-      
-      # Remove existing credentials file.
-      rm -vf ${HOME}/.aws/credentials
-      
-      # Set the ACCOUNT_ID and the region to work with our desired region
-      export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
-      test -n "$AWS_REGION" && echo AWS_REGION is "$AWS_REGION" || echo AWS_REGION is not set
-   # Validate that our IAM role is valid.
-      aws sts get-caller-identity --query Arn | grep partnerName-workshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
-      ```
+**Delete** – Deletes the template ​
 
-   {{% notice warning %}}
-   If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
-   {{% /notice %}}
+{{% notice tip %}}
+**Execute Template​**
+{{% /notice %}}
 
-   If you are done, please proceed to the Partner Setup section!
+Executes the template against [Cloud Accounts](https://docs.corestack.io/manage-cloud-accounts/) and performs the tasks specified in the template. In ‘Job History' you can find the status and outputs for this execution. Execute requires following inputs: ​
+
+**Job Name** – Optional. If not given system will generates this. ​
+
+**Cloud Account** – Cloud Account need to be used for execution. ​
+
+Cloud Account Additional Info – Additional Info of Cloud Account (E.g., Resource Group, Location, Region). ​
+
+**Execution Parameters** – Additional parameters from the Template.​
+
+A sample Template execute window, for a simple example of taking an `AWS_EC2_Instance_With_SecurityGroup` is shown below:​
+
+  ![Template Execution](/images/templaterun.gif)
+
+The [Cloud Accounts](https://docs.corestack.io/manage-cloud-accounts/) lists the available list of AWS cloud accounts in this Tenant​
+
+Once the Cloud Account details are selected, click on “Load Execute parameters” to get the input parameters of the template.
