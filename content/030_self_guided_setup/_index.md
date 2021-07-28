@@ -16,6 +16,3 @@ Here is a preview of what we will be setting up:
 1. Creating an AWS account with proper permissions
 1. Sign up for CoreStack via AWS Marketplace​
 1. Requesting AWS credit from AWS Marketplace​
-1. Setting up a CoreStack instance​
-1. Create and apply templates​
-1. Additional workshop specific requirements
