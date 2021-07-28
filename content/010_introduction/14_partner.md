@@ -1,10 +1,11 @@
 ---
-title: "Who is this partner?"
+title: "What is CoreStack"
 chapter: true
 weight: 14
 ---
 
-# What is {insert partner name}?
+# What is CoreStack?
 
-How did the Partner come to be? What's the history of the industry, and how did they get started?
+CoreStack empowers enterprises to unleash the power of cloud on their terms by helping them rapidly achieve continuous and autonomous cloud governance at scale. CoreStack enables enterprises to realize:​
 
+![CoreStack Operations](../images/corestack-ops.png "CoreStack Operations")
