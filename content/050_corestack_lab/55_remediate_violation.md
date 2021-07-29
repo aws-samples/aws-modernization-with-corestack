@@ -1,5 +1,5 @@
 ---
-title: "4. Execute templates/scripts that will remediate the violation "
+title: "5. Execute templates/scripts that will remediate the violation "
 chapter: true
 weight: 15
 ---

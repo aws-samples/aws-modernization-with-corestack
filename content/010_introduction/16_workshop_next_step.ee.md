@@ -13,5 +13,3 @@ There are a few prerequisite tasks you must perform before getting started on th
 1. Access to GitHub and writes to run a CFT or Terraform Template​
 
 In the next section, you will be instructed on how to configure all the prerequisite tasks stated above.
-
-{{% children showhidden="false" %}}

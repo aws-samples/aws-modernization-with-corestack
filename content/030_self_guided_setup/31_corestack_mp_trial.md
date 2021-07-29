@@ -12,6 +12,6 @@ weight: 11
 1. Click the **Create contract** button in the purchase box. **You will NOT be charged after the free trial**
 1. This pop-up box will appear: ![Contract Box](/images/cs_mp_3.png)
 1. Click the **Accept contract** button.
-1. After Signup, go to your [CoreStack dashboard](https://discover.corestack.io/)
+1. After Signup, go to your [CoreStack dashboard](https://cloud.corestack.io/)
 
 And that's it! You are now done with signing up with CoreStack! Click the next button to proceed with requesting AWS credits so this workshop will be **FREE**.
