@@ -6,8 +6,7 @@ weight: 12
 
 <table class="credit" style="width:100%">
 <tr class="credit">
-  <td class="credit" style="width:70%">To help you cover the AWS service costs incurred by doing this tutorial,
-AWS Credits are available courtesy of AWS Marketplace. Submit the form and you
+  <td class="credit" style="width:70%">Submit the form and you
 will receive a confirmation email with an AWS Credit Code. Credits are
 available while supplies last.
   </td>
