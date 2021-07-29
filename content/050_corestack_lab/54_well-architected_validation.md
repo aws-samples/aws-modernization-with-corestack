@@ -16,8 +16,7 @@ Each Compliance standard contains various controls or rules which represents gui
 
 ***Navigation ***
 
-1 . Click on Compliance in the Left navigation menu and select Standards option to land in Compliance Controls screen.  
+1. Click on Compliance in the Left navigation menu and select Standards option to land in Compliance Controls screen.
+1. The tabs at the top represent the scope of the standards. There are 2 tabs – Marketplace and My Standards.
 
-2 . The tabs at the top represent the scope of the standards. There are 2 tabs – Marketplace and My Standards.
-
-![AWS WAF](../images/aws-waf.png "AWS Waf")
+![AWS Well-Architected Framework](../images/aws-waf.png)
