@@ -1,5 +1,5 @@
 ---
-title: "2. CoreStack Templates"
+title: "1. CoreStack Templates"
 chapter: true
 weight: 11
 ---

@@ -1,5 +1,5 @@
 ---
-title: "3. Infra as code – use cases"
+title: "2. Infra as code – use cases"
 chapter: true
 weight: 11
 ---

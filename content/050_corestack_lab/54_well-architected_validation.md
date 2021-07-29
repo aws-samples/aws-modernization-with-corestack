@@ -1,5 +1,5 @@
 ---
-title: "4. Validation of the Infra provisioned against AWS Well Architected Framework"
+title: "3. Validation of the Infra provisioned against AWS Well Architected Framework"
 chapter: true
 weight: 14
 ---
